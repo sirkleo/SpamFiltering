@@ -209,7 +209,7 @@ public class CleanerText {
             "mexico",
             "y",
             "de",
-            "e","u"
+            "e",
         };
         String [] stopWordsEng={
             "a's"	,"able",	"about",	"above"	,"according",
