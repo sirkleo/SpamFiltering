@@ -34,3 +34,4 @@ public class NaiveBayes {
         System.out.println(naive.getVarianza(muestra));
     }
 }
+//https://github.com/sirkleo/SpamFiltering.git
