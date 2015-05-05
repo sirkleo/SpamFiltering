@@ -6,6 +6,10 @@
 
 package spamfiltering;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author jleonp
@@ -17,6 +21,27 @@ public class SpamFiltering {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        BufferedReader br = null;
+ 
+		try {
+ 
+			String sCurrentLine;
+ 
+			
+ 
+			while ((sCurrentLine = br.readLine()) != null) {
+				System.out.println(sCurrentLine);
+			}
+ 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
     }
     
 }
